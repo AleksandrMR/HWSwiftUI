@@ -11,6 +11,14 @@
 		1F0748DB25F7603F003121F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0748DA25F7603F003121F7 /* ContentView.swift */; };
 		1F0748DD25F76040003121F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0748DC25F76040003121F7 /* Assets.xcassets */; };
 		1F0748E025F76040003121F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0748DF25F76040003121F7 /* Preview Assets.xcassets */; };
+		1F0748EA25F77ACF003121F7 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0748E925F77ACF003121F7 /* HomeScreen.swift */; };
+		1F0748EF25F77B49003121F7 /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0748EE25F77B49003121F7 /* ListScreen.swift */; };
+		1F0748F225F77BA5003121F7 /* ModalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0748F125F77BA5003121F7 /* ModalScreen.swift */; };
+		1F185ED225FD511600EE8994 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F185ED125FD511600EE8994 /* ListViewModel.swift */; };
+		1F185ED625FD526200EE8994 /* ListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F185ED525FD526200EE8994 /* ListDataModel.swift */; };
+		1F185EDF25FD57F800EE8994 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F185EDE25FD57F800EE8994 /* FilterView.swift */; };
+		1F185EE825FE862700EE8994 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F185EE725FE862700EE8994 /* Router.swift */; };
+		1F2FD04D25FF371D008BE92F /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2FD04C25FF371D008BE92F /* MapScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		1F0748DC25F76040003121F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F0748DF25F76040003121F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F0748E125F76040003121F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F0748E925F77ACF003121F7 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		1F0748EE25F77B49003121F7 /* ListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreen.swift; sourceTree = "<group>"; };
+		1F0748F125F77BA5003121F7 /* ModalScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalScreen.swift; sourceTree = "<group>"; };
+		1F185ED125FD511600EE8994 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		1F185ED525FD526200EE8994 /* ListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataModel.swift; sourceTree = "<group>"; };
+		1F185EDE25FD57F800EE8994 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		1F185EE725FE862700EE8994 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		1F2FD04C25FF371D008BE92F /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,11 @@
 			children = (
 				1F0748D825F7603F003121F7 /* HWSwiftUIApp.swift */,
 				1F0748DA25F7603F003121F7 /* ContentView.swift */,
+				1F185EE625FE860100EE8994 /* Services */,
+				1F185EE325FDE28300EE8994 /* Home */,
+				1F185ED025FD50DF00EE8994 /* List */,
+				1F185EE225FDE26500EE8994 /* Modal */,
+				1F2FD04625FF35A3008BE92F /* Map */,
 				1F0748DC25F76040003121F7 /* Assets.xcassets */,
 				1F0748E125F76040003121F7 /* Info.plist */,
 				1F0748DE25F76040003121F7 /* Preview Content */,
@@ -67,6 +88,49 @@
 				1F0748DF25F76040003121F7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F185ED025FD50DF00EE8994 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				1F185ED525FD526200EE8994 /* ListDataModel.swift */,
+				1F185ED125FD511600EE8994 /* ListViewModel.swift */,
+				1F0748EE25F77B49003121F7 /* ListScreen.swift */,
+				1F185EDE25FD57F800EE8994 /* FilterView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		1F185EE225FDE26500EE8994 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				1F0748F125F77BA5003121F7 /* ModalScreen.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		1F185EE325FDE28300EE8994 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1F0748E925F77ACF003121F7 /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1F185EE625FE860100EE8994 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F185EE725FE862700EE8994 /* Router.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1F2FD04625FF35A3008BE92F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				1F2FD04C25FF371D008BE92F /* MapScreen.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +202,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0748EF25F77B49003121F7 /* ListScreen.swift in Sources */,
+				1F0748EA25F77ACF003121F7 /* HomeScreen.swift in Sources */,
+				1F185ED225FD511600EE8994 /* ListViewModel.swift in Sources */,
 				1F0748DB25F7603F003121F7 /* ContentView.swift in Sources */,
+				1F2FD04D25FF371D008BE92F /* MapScreen.swift in Sources */,
+				1F185EE825FE862700EE8994 /* Router.swift in Sources */,
+				1F185EDF25FD57F800EE8994 /* FilterView.swift in Sources */,
+				1F185ED625FD526200EE8994 /* ListDataModel.swift in Sources */,
 				1F0748D925F7603F003121F7 /* HWSwiftUIApp.swift in Sources */,
+				1F0748F225F77BA5003121F7 /* ModalScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
